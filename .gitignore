@@ -1,0 +1,3 @@
+# Local artifacts from the browse tool — browse.json holds a daemon token,
+# which has no business in a public repo.
+.gstack/

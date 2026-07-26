@@ -1,0 +1,101 @@
+/* 하노이 러시 공개 문서 공용 스타일.
+   빌드 단계가 없으므로 이 파일 하나가 전 페이지의 유일한 스타일 출처다. */
+
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #5a5a5a;
+  --rule: #e0e0e0;
+  --link: #0b57d0;
+}
+
+/* 어두운 화면으로 여는 사람에게 흰 배경은 눈부시다. 심사자도 마찬가지다. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a1a;
+    --fg: #e8e8e8;
+    --muted: #a0a0a0;
+    --rule: #3a3a3a;
+    --link: #7cacf8;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  max-width: 42rem; /* 한 줄이 너무 길면 눈이 다음 줄 첫머리를 놓친다 */
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+  line-height: 1.7;
+  word-break: keep-all; /* 한국어는 어절 단위로 끊어야 읽힌다 */
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+h2 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 1.125rem;
+}
+
+h3 {
+  margin: 1.75rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+a {
+  color: var(--link);
+}
+
+nav {
+  display: flex;
+  gap: 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.875rem;
+}
+
+nav [aria-current] {
+  color: var(--muted);
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+table {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--rule);
+  text-align: left;
+  vertical-align: top;
+}
+
+/* 좁은 화면에서 표가 넘칠 때 본문 전체가 아니라 표만 가로로 스크롤시킨다.
+   표에 따라 감싸고 말고를 판단하지 말고 **모든 <table>을 이 래퍼로 감싼다** — 어느 표가
+   넘칠지는 문구를 고칠 때마다 달라진다. 실제로 문의처 표는 이메일 주소가 줄바꿈이 안 되는
+   토큰이라 320px에서 이미 본문 폭을 넘었다.
+   table 자체에 overflow-x를 걸지 않는 이유는 그러려면 display:block이 필요한데, 그러면
+   스크린리더가 읽는 표 의미론이 깨지기 때문이다. */
+.table-scroll {
+  overflow-x: auto;
+}
