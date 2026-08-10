@@ -51,3 +51,10 @@ swapped now — see the third rule below.
   Google updates that page as the SDK changes, so re-check the table whenever the
   ads SDK is upgraded. It also has to match the App Privacy answers in App Store
   Connect — a mismatch is itself grounds for a 5.1.1 rejection.
+
+- The **usage statistics** table is different: it is copied from the app's own
+  code, not from a vendor page, so it goes stale whenever an analytics event,
+  parameter, or user property is added or removed. The inventory it must match —
+  with the App Store Connect answers alongside it — lives in the hanoi-rush repo
+  at `docs/superpowers/specs/2026-08-10-hha-91-privacy-disclosure-alignment.md`.
+  Three places have to agree: the code, this page, and the App Privacy answers.

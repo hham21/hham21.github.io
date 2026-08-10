@@ -14,18 +14,45 @@
 </nav>
 
 <h1>HANOI RUSH Privacy Policy</h1>
-<p>Effective date: July 26, 2026</p>
+<p>Effective date: August 10, 2026</p>
 
-<p>HANOI RUSH ("the app") <strong>does not collect or store your personal information directly.</strong> There are no accounts, and the developer runs no server. The app does show ads through Google AdMob, and Google collects some information in the process. This policy explains what that means.</p>
+<p>HANOI RUSH ("the app") <strong>does not collect information that identifies you.</strong> There are no accounts, the app never asks for your name, email, phone number, or address, and the developer runs no server.</p>
+
+<p>The app does use two Google services, and information is collected in the process. One is <strong>advertising</strong> (Google AdMob); the other is <strong>usage statistics used to improve the game</strong> (Google Analytics for Firebase). This policy explains what each one collects and how you can opt out.</p>
 
 <h2>1. Information handled</h2>
 
 <h3>Stored on your device only, never transmitted</h3>
 <p>The following stays on your device and is never sent anywhere. Deleting the app deletes it.</p>
 <ul>
-<li>Game settings — theme, screen effects, sound and music volume, sound style, haptics, language, whether you have seen the tutorial</li>
+<li>Game settings — theme, screen effects, sound and music volume, sound style, haptics, language, whether you have seen the tutorial, whether usage statistics are allowed</li>
 <li>Game records — clear time, move count, and date for each difficulty</li>
 <li>Cumulative play time and first-launch time, used to decide how often ads appear</li>
+</ul>
+
+<h3>Usage statistics collected to improve the game</h3>
+<p>To find out where players get stuck and where they give up — so the difficulty curve, the tutorial, and the screens can be fixed — the app sends the following to Google Analytics for Firebase. Turning off <strong>Settings → "Usage Stats"</strong> in the app stops this collection at any time.</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>Data</th><th>What it contains</th></tr>
+</thead>
+<tbody>
+<tr><td>Screen views</td><td>Which screen you opened — title, difficulty select, game, records, medals, or settings</td></tr>
+<tr><td>Tutorial progress</td><td>Whether the tutorial was started, completed, or skipped, and which step you were on if you skipped</td></tr>
+<tr><td>Per-round summary</td><td>Difficulty (number of disks), elapsed time, move count, moves as a percentage of the minimum, the longest pause between inputs in that round, and whether you finished or quit partway</td></tr>
+<tr><td>Records and medals</td><td>The rank a new record reached, how much time it shaved off your previous best, and the medal tier earned</td></tr>
+<tr><td>Best tier per difficulty</td><td>Your current best medal tier for each difficulty from 3 to 9 disks</td></tr>
+<tr><td>Setting changes</td><td>Which setting you changed and <strong>the new value</strong> — theme, language, haptics, screen effects, sound style, sound and music volume</td></tr>
+<tr><td>Ad exposure</td><td>When a banner or interstitial ad was shown and dismissed. If the advertising service is linked to analytics, the estimated ad revenue from that impression is included as well</td></tr>
+<tr><td>Collected automatically alongside</td><td>App instance ID, app version, device model, OS version, screen size, device language, approximate region inferred from your IP address, first-launch time, and session start times</td></tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><strong>You are distinguished only by an app instance ID</strong> — a random value Firebase issues at installation. Deleting the app destroys it. Reinstalling issues a new one that is not linked to your earlier activity.</li>
+<li><strong>The advertising identifier (IDFA) is not used for usage statistics.</strong> The analytics library the app links (FirebaseAnalyticsCore) does not include the ability to read the advertising identifier at all. IDFA is used only for the advertising purposes in section 5.</li>
+<li><strong>In regions where consent is required, such as the European Economic Area, nothing is collected until you respond to the consent form.</strong> If the app cannot determine your region — for example on a first launch with no internet connection — nothing is collected for that session either.</li>
 </ul>
 
 <h3>Collected by Google for advertising</h3>
@@ -50,28 +77,40 @@
 <ul>
 <li>To keep your settings and records so you can pick up where you left off</li>
 <li>To show ads and measure their performance, which covers the cost of running the app</li>
+<li>To learn where players get stuck or give up, so the difficulty, the tutorial, and the screens can be improved</li>
 </ul>
 
 <h2>3. Retention and deletion</h2>
 <p>Settings and records stored on your device are deleted when you delete the app. The developer keeps no copy, so there is nothing separate to delete.</p>
+<p>Usage statistics are retained for <strong>14 months</strong>. Individual per-round records are deleted 14 months after the record is created, leaving only aggregated figures. Deletion runs as a monthly batch, so the actual removal can be up to a month later.</p>
+<p>Values kept at the user level, such as your best medal tier for each difficulty, have their <strong>14-month period restarted every time you open the app</strong>, so they persist for as long as you keep playing. Deleting the app destroys the app instance ID, so nothing further is recorded, and whatever remains is deleted once the period above passes.</p>
+<p>Individual records are tied to the app instance ID alone, so they cannot be traced back to a particular person.</p>
 <p>Google's retention and deletion practices are governed by Google's own policy. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
 
 <h2>4. Third parties</h2>
-<p>The app uses the following service to show ads.</p>
+<p>The app uses the following two services. Both are provided by Google LLC.</p>
 <div class="table-scroll">
 <table>
 <tbody>
 <tr><th>Provider</th><td>Google LLC (Google AdMob, User Messaging Platform)</td></tr>
 <tr><th>Purpose</th><td>Serving ads, measuring ad performance, managing advertising consent</td></tr>
 <tr><th>Data</th><td>The items listed in "Collected by Google for advertising" above</td></tr>
-<tr><th>Policy</th><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td></tr>
 </tbody>
 </table>
 </div>
-<p>The developer shares your information with no other third party.</p>
+<div class="table-scroll">
+<table>
+<tbody>
+<tr><th>Provider</th><td>Google LLC (Google Analytics for Firebase)</td></tr>
+<tr><th>Purpose</th><td>Analyzing usage statistics to improve the game</td></tr>
+<tr><th>Data</th><td>The items listed in "Usage statistics collected to improve the game" above</td></tr>
+</tbody>
+</table>
+</div>
+<p>Information collected by these services is handled under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>, and may be transferred to servers Google operates in other countries. The developer shares your information with no other third party and sells none of it.</p>
 
 <h2>5. Advertising identifier and opting out</h2>
-<p>On iOS, the system asks your permission before the app can access the advertising identifier (IDFA). You may decline — you will simply see non-personalized ads instead, and nothing about the game is restricted.</p>
+<p>On iOS, the system asks your permission before the app can access the advertising identifier (IDFA). You may decline — you will simply see non-personalized ads instead, and nothing about the game is restricted. This choice affects advertising only; the usage statistics in section 1 do not use IDFA, so they are the same whether you allow or decline.</p>
 <p>You can change this choice at any time.</p>
 <ul>
 <li><strong>iOS Settings</strong> → Privacy &amp; Security → Tracking → HANOI RUSH</li>
@@ -79,8 +118,11 @@
 </ul>
 
 <h2>6. Your rights</h2>
-<p>Because the developer stores none of your personal information, there is nothing held by the developer for you to access, correct, or delete. You control the following directly.</p>
+<p>Because the developer holds nothing that identifies you, there is no way to single you out in order to process an access, correction, or deletion request. You control the following directly.</p>
 <ul>
+<li><strong>Opting out of usage statistics:</strong> turn off <strong>Settings → "Usage Stats"</strong> in the app and collection stops immediately. You can turn it back on at any time, and turning it off restricts nothing about the game.</li>
+<li><strong>Deleting usage statistics already collected:</strong> deleting the app destroys the app instance ID, which ends collection; existing records are deleted once the retention period in section 3 passes.</li>
+<li><strong>Revisiting advertising consent:</strong> in regions where consent is required, open the app's <strong>Settings → Privacy Options</strong>.</li>
 <li>Settings and records on your device: deleting the app deletes them.</li>
 <li>Advertising identifier: opt out using the methods in section 5.</li>
 <li>Information held by Google: follow the procedures in the Google Privacy Policy.</li>
@@ -91,7 +133,8 @@
 <p>The app is not directed to children under 14, and it is not configured as a child-directed app with the advertising service. The developer does not knowingly collect information from children under 14.</p>
 
 <h2>8. Safeguards</h2>
-<p>The app does not transmit or store your information on a developer-operated server. Not holding the data is the strongest safeguard this app can offer. Settings and records on your device live in the operating system's per-app storage, which other apps cannot read.</p>
+<p>The developer operates no server of their own and does not collect information that identifies you in the first place. Not collecting the data is the strongest safeguard this app can offer.</p>
+<p>Settings and records on your device live in the operating system's per-app storage, which other apps cannot read. Usage statistics are transmitted over encrypted connections to systems Google operates, and the developer reviews the results only to improve the game and does not attempt to identify individual users.</p>
 
 <h2>9. Contact</h2>
 <div class="table-scroll">
@@ -105,9 +148,20 @@
 
 <h2>10. Changes to this policy</h2>
 <p>If this policy changes, the updated text and its effective date will be posted on this page. Changes that disadvantage users will be posted at least 7 days before they take effect.</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>Effective date</th><th>What changed</th></tr>
+</thead>
+<tbody>
+<tr><td>August 10, 2026</td><td>Added collection of usage statistics (Google Analytics for Firebase) to improve the game. Accordingly, <strong>the opening promise changed from "does not collect or store your personal information directly" to "does not collect information that identifies you"</strong>, and the data collected, the opt-out, the retention period, and the third parties were reflected in sections 1, 2, 3, and 4, the relationship between the advertising identifier and usage statistics in section 5, the opt-out method in section 6, and the safeguards in section 8.</td></tr>
+<tr><td>July 26, 2026</td><td>First published.</td></tr>
+</tbody>
+</table>
+</div>
 
 <footer>
-<p><a href="../../support/en/">Support</a> · <a href="../../../">All documents</a> · Last updated July 26, 2026</p>
+<p><a href="../../support/en/">Support</a> · <a href="../../../">All documents</a> · Last updated August 10, 2026</p>
 </footer>
 </body>
 </html>
